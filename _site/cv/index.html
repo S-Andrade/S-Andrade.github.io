@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Sandra MC Andrade</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 40px;
+      background-color: transparent;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4b91e2;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: #f7c94b;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      border-radius: 2px;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a.active {
+      color: #f7c94b;
+    }
+
+    .container {
+      flex: 1;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: #4b91e2;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #4b91e2;
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #f7c94b;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    /* CV row layout */
+    .cv-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .cv-date {
+      font-weight: 600;
+      color: #4b91e2;
+      min-width: 120px;
+      flex-shrink: 0;
+    }
+
+    .cv-description {
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .cv-description a {
+      color: #4b91e2;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cv-description a:hover {
+      color: #f7c94b;
+    }
+
+    footer {
+        text-align: center;
+        padding: 0px 0;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    footer a {
+        color: #4b91e2;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #f7c94b;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      .cv-row {
+        flex-direction: column;
+      }
+      .cv-date {
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="/">About me</a>
+  <a href="/publications/">Publications</a>
+  <a href="/cv/">CV</a>
+</nav>
+
+  <div class="container">
+    <h1>Curriculum Vitae</h1>
+
+    <!-- Education Section -->
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="cv-row">
+        <div class="cv-date">02/25–present</div>
+        <div class="cv-description">
+          <strong>PhD, Computer Science & Engineering</strong> — Instituto Superior Técnico, Universidade de Lisboa, Lisbon, Portugal<br>
+          Research topics: cognitive and behavioral science, human-robot interactions, and system design
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-date">09/20–11/23</div>
+        <div class="cv-description">
+          <strong>Master of Computer Science & Engineering</strong> — Instituto Superior Técnico, Universidade de Lisboa, Lisbon, Portugal<br>
+          Focus: <strong>Intelligent Robotics</strong> and <strong>Artificial Intelligence</strong><br>
+          <em>Thesis:</em> <strong>Playing 'The Mind' game with a robot</strong><br>
+          Investigated the influence of robotic gaze on team synchronization in human-robot hybrid teams. Four experimental conditions were implemented and tested to examine the effects of different gaze strategies on team dynamics.<br>
+          Link to thesis: <a href="https://scholar.tecnico.ulisboa.pt/records/LWHoZP23pCQspP8N1f3SqAj9dwRGPfX0hLQV" target="_blank">here</a>
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-date">09/16–09/20</div>
+        <div class="cv-description">
+          <strong>Bachelor of Computer Science & Engineering</strong> — Universidade de Aveiro, Aveiro, Portugal
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Research Experience Section -->
+    <div class="section">
+      <h2>Research Experience</h2>
+
+      <div class="cv-row">
+        <div class="cv-date">01/24–12/25</div>
+        <div class="cv-description">
+          <strong>GAIPS, INES-ID — Center for Responsible AI</strong><br>
+          Investigate the emergence of collective intelligence in hybrid societies of agents and humans through mechanisms of attention and awareness in agents.<br>
+          Advisors: Dr. Joana Campos, Dr. Filipa Correia, Dr. Hirokazu Shirado
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Teaching Assistantship -->
+    <div class="section">
+      <h2>Teaching Assistantship</h2>
+
+      <div class="cv-row">
+        <div class="cv-date">09/25–present</div>
+        <div class="cv-description">
+          <strong>Instituto Superior Técnico, Universidade de Lisboa</strong> — Social Robotics and Human-Robot Interaction
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Language Skills -->
+    <div class="section">
+      <h2>Language Skills</h2>
+
+      <div class="cv-row">
+        <div class="cv-date">Portuguese:</div>
+        <div class="cv-description">Native Speaker</div>
+      </div>
+      <div class="cv-row">
+        <div class="cv-date">English:</div>
+        <div class="cv-description">C1 (Certificate in Advanced English - CAE)
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Extracurricular Activities -->
+    <div class="section">
+      <h2>Extracurricular Activities</h2>
+
+      <div class="cv-row">
+        <div class="cv-date">10/25–present</div>
+        <div class="cv-description">
+          <strong>Podcast Assistant at "Quatro à conversa"</strong><br>
+          Developed a system to generate non-verbal behaviors for a robot assistant during podcast conversations.<br>
+          Link to podcast: <a href="https://open.spotify.com/show/3HEpyf8Kohbbvvc67vmf5B?si=4412cac89342493e" target="_blank">here</a>
+        </div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-date">08/25</div>
+        <div class="cv-description">Volunteer at IEEE Conference on Games 2025</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-date">12/22–12/23</div>
+        <div class="cv-description">Volunteer work at social canteen — Santa Casa da Misericórdia de São João da Madeira</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-date">03/22–06/22</div>
+        <div class="cv-description">Volunteer work as virtual museum developer — ENTRAJUDA device bank</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Contact me at <a href="mailto:sandraandrade@tecnico.ulisboa.pt">sandraandrade@tecnico.ulisboa.pt</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar placeholder (use your include if needed) */
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 40px;
+      background-color: transparent;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4b91e2;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: #f7c94b;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      border-radius: 2px;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a.active {
+      color: #f7c94b;
+    }
+
+    .container {
+      flex: 1; /* ensures footer stays at bottom */
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #4b91e2;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .coming-soon {
+      font-size: 1.3rem;
+      color: #f7c94b;
+      border: 2px dashed #f7c94b;
+      padding: 40px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      background-color: #f7f0c9;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    footer {
+        text-align: center;
+        padding: 0px 0;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    footer a {
+        color: #4b91e2;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #f7c94b;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="/">About me</a>
+  <a href="/publications/">Publications</a>
+  <a href="/cv/">CV</a>
+</nav>
+
+  <div class="container">
+    <h1>Publications</h1>
+    <div class="coming-soon"> Coming Soon!</div>
+  </div>
+
+  <footer>
+    <p>Contact me at <a href="mailto:sandraandrade@tecnico.ulisboa.pt">sandraandrade@tecnico.ulisboa.pt</a></p>
+    </footer>
+</body>
+</html>

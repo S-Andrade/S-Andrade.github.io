@@ -1,8 +1,4 @@
 ---
-layout: default
-title: Home
+layout: about
+title: About
 ---
-
-# Welcome to My Website
-
-This is the home page.
