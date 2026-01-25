@@ -1,0 +1,8 @@
+title: Sandra MC Andrade
+description: My website
+baseurl: ""
+url: "https://s-andrade.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
